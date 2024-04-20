@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box_model</title>
+  <style>
+    @font-face{
+      font-family:PRegular;
+      src: url(assets/font/Poppins-Regular.ttf);
+    }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .bx{
+      height: 400px;
+      width: 600px;
+      background-color:rgb(42, 37, 37);
+      position: relative;
+    }
+    .bx1{
+      height: 100px;
+      width: 100px;
+      background-color: rgb(101, 224, 183);
+      position: absolute;
+    }
+    .bx2{
+      height: 100px;
+      width: 100px;
+      background-color: rgb(112, 231, 247);
+      bottom: 200px;
+      left: 100px;
+      position: absolute;
+    }
+  
+    .bx3{
+      height: 100px;
+      width: 100px;
+      background-color: rgb(114, 204, 234);
+      bottom: 100px;
+      left: 200px;
+      position: absolute;
+    }
+    .sticky{
+position: sticky;
+top: 0;
+background-color: rgb(149, 149, 255);
+
+    }
+    .fixed{
+position: fixed;
+bottom: 0;
+background-color: rgb(255, 153, 153);
+    }
+    .text{
+      font-family:"PRegular",sans-serif;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="sticky">
+    <h1>Header</h1>
+      </div>
+
+<div class="text">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita laborum adipisci fugit illum sint! Distinctio recusandae sapiente minus aut error voluptatibus perspiciatis delectus? Architecto adipisci minus, qui laudantium veritatis, totam vitae quae voluptatibus natus fugit officiis reprehenderit ut assumenda enim perspiciatis non impedit laboriosam. Aliquid quibusdam consequuntur dolorem officia qui? Saepe non atque, possimus quo beatae doloremque odit, dolorum iure nisi voluptates architecto, repellat cum quibusdam neque repellendus sit similique dolores libero ducimus? Quos, numquam, facilis mollitia alias voluptas asperiores vel assumenda animi ipsum voluptatibus dolore, est consequuntur. Hic sapiente ex quisquam pariatur eos quia sint, deserunt, reiciendis facilis assumenda accusamus ut mollitia ipsa. Ad repellendus explicabo maxime similique consequuntur inventore totam possimus magnam, quod cumque cupiditate doloribus quo necessitatibus laboriosam neque placeat dolorem expedita alias laudantium autem. Explicabo unde commodi, nulla ut error repudiandae esse laboriosam temporibus ratione minima animi possimus, impedit at quis! Velit nam in, ratione cum reiciendis possimus animi nihil dolore ducimus exercitationem incidunt tempora itaque soluta. Molestiae alias est blanditiis laboriosam culpa quidem, officia modi amet tempora consectetur quia nam asperiores sapiente natus? At est exercitationem enim repellat vel qui, voluptatum id, sint necessitatibus reprehenderit aut delectus, quas mollitia similique magnam amet nihil unde! Tenetur eos atque, provident aspernatur facilis eius assumenda ea iste veniam nisi, iusto mollitia fugit tempore alias perspiciatis autem ipsa obcaecati debitis in laborum totam! Sed quasi minima iure ex laudantium consequatur rerum eum similique ratione. Cum animi dolore, iste dignissimos porro rem provident sit repudiandae id, aut labore odit sint optio quasi. Deleniti autem explicabo atque voluptatem temporibus perspiciatis eligendi culpa maxime, corrupti sed quo aliquam incidunt soluta numquam accusantium consectetur iusto adipisci? Culpa impedit veniam ullam cum, accusantium suscipit odit eligendi dicta dolorem rerum accusamus, aut, libero consequuntur at debitis obcaecati ratione! Minima hic reprehenderit quaerat nobis. Doloribus repudiandae mollitia rerum totam autem tempora blanditiis ad temporibus dolorum ex cupiditate sequi, quia aliquid. Excepturi esse debitis explicabo, veniam fuga quia dicta dolorem est cum odio accusamus, sapiente itaque eligendi reprehenderit id, illum perferendis dignissimos assumenda quod similique labore! Quam illo adipisci consequatur eos dignissimos quos quibusdam quidem culpa soluta amet autem, fuga animi ex obcaecati possimus ad ab vitae omnis nemo deleniti cum, est deserunt! Explicabo eum blanditiis dolorum perferendis et provident quisquam, quam esse sed neque! Eius quam magnam repudiandae numquam provident praesentium minus atque, veniam architecto. Id corrupti velit accusamus alias neque ipsum veniam sed ad iusto!
+</div>
+<div class="bx">
+  <div class="bx1"></div>
+  <div class="bx2"></div>
+  <div class="bx3"></div>
+</div>
+  <div class="fixed">
+<h1>Bottom</h1>
+  </div>
+</body>
+</html>
