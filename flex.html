@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+  <style>
+    .bx{
+     max-width: 400px;
+     height: 300px;
+      border: 2px solid black;
+      display: flex;
+      /* flex-direction: row; */
+      justify-content: center;
+      align-items: center;
+      /* flex-wrap: wrap; */
+  
+      
+    }
+    .b{
+    width: 200px;
+    height: 100px;
+    /* flex-grow: 1; */
+    }
+    .bx1{
+ 
+      background-color: orange;
+      order: 5;
+    }
+    .bx2{
+      background-color: rgb(160, 160, 160);
+      order: 4;
+    }
+    .bx3{
+      background-color: rgb(98, 45, 139);
+      order: 2;
+    }
+    .bx4{
+
+      background-color: rgb(23, 17, 6);
+      order: 1;
+    }
+    .bx5{
+      background-color: rgb(66, 170, 46);
+      order: 3;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="bx">
+    <div class="bx1 b"></div>
+    <div class="bx2 b"></div>
+    <div class="bx3 b"></div>
+    <div class="bx4 b"></div>
+    <div class="bx5 b"></div>
+  </div>
+</body>
+</html>
