@@ -1,62 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Task</title>
   <style>
-    .bx{
-height: 500px;
-width: 900px;
-border: 2px solid black;
+    @font-face{
+      font-family: pregular;
+      src: url(/assets/font/Poppins-Regular.ttf);
+    }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+.box{
+ height: 600px;
+ width: 900px;
+ border: 2px rgb(239, 191, 103);
+ background-color: rgb(239, 191, 103);
+ border-radius: 10px;
+ font-family:"pregular"sans-serif;
+ margin: 10px 0 0 20%;
+}
+.box h1{
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 40px;
+}
+.boxes{
+display: flex;
+flex-direction: row;
+gap: 10px;
+justify-content: space-around;
+margin-top: 30px;
+
+}
+.a{
+background-color: rgb(255, 255, 255);
+height: 400px;
+width: 250px;
+text-align: center;
+object-fit:cover;
 overflow: hidden;
-background-color: rgb(0, 255, 234);
-border-radius: 10px;
-    }
-    .header{
-      height: 50px;
-      width: 800px;
-      background-color: rgb(123, 188, 241);
-      margin: 10px 5px 30px 50px;
-      text-align: center;
-      border-radius: 5px;
-    }
-    .boxes{
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      justify-content: center;
-      
-    }
-    .b{
-height: 350px;
-width:250px;
-background-color: rgb(80, 201, 218);
-padding: 5px;
 border-radius: 5px;
-    }
+}
+.a p{
+  text-align: justify;
+  padding: 4px;
+}
+img{
+  padding-top: 30px;
+  width: 50%;
+  height: 120px;
+}
   </style>
 </head>
 <body>
-  <div class="bx">
-    <div class="header">
-      <h1>Header</h1>
-    </div>
+  <div class="box">
+    <h1>CSS Flexbox Cards</h1>
     <div class="boxes">
-    <div class="bx1 b">
-      <h4>First Article</h4>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempore illo iste nulla voluptatum exercitationem, temporibus et alias quod. Mollitia tenetur aspernatur repellendus saepe ad enim nulla? Quaerat, esse? Corporis!
-    </div>
-    <div class="bx2 b">
-      <h4>Second Article</h4>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima debitis sint tempore dolore aut, at, maxime facilis eos tempora fugiat deleniti. Nam a suscipit porro enim voluptates. Optio, quaerat. Nisi!
-    </div>
-    <div class="bx3 b">
-      <h4>Third Article</h4>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae quia nulla soluta, amet ipsum maiores praesentium dolorem natus cupiditate deserunt dicta adipisci aliquam deleniti ea perspiciatis temporibus! Aut, rem?
+      <div class="bx  a">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-angular-3628622-3029847.png?f=webp" alt="">
+        <h2>Angular</h2>
+        <p>
+          Angular is a comprehensive web application framework developed and maintained by Google. It's used for building dynamic, single-page applications (SPAs) and large-scale enterprise applications. Angular offers a structured approach to web development, utilizing TypeScript, a superset of JavaScript, for building robust and maintainable applications. </p>
+      </div>
+      <div class="bx1 a">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+        <h2>React</h2>
+        <p>
+          React is a JavaScript library for building user interfaces, primarily developed by Facebook. It's known for its declarative and component-based approach, allowing developers to create interactive UIs efficiently. React uses a virtual DOM (Document Object Model) to optimize performance by minimizing DOM manipulation operations.</p>
+      </div>
+      <div class="bx2 a">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-vue-282497.png?f=webp" alt="">
+        <h2>Vue</h2>
+        <p>
+          Vue.js is a progressive JavaScript framework for building user interfaces. It's designed to be incrementally adoptable, meaning you can start using it in small parts of your project and gradually scale up. Vue.js focuses on the view layer of an application, providing tools and patterns to create reactive and dynamic UIs efficiently.</p>
+      </div>
     </div>
   </div>
-  </div>
-  
 </body>
 </html>
