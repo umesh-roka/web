@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 15px;
+        max-width: 100%;
+      }
+
+      /* @media only screen and(min-width:100%;) { */
+
+      .grid_container {
+        display: grid;
+        grid-template-areas:
+          'header header header header'
+          'main_content main_content main_content sidebar'
+          'main_content main_content main_content sidebar'
+          'articles articles articles sidebar'
+          'articles articles articles sidebar'
+        ;
+        gap: 10px;
+      }
+
+      .header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        align-items: center;
+        height: 70px;
+        padding: 10px;
+
+      }
+
+      .header a {
+        text-decoration: none;
+        color: white;
+        padding-right: 40px;
+      }
+
+      .main_content {
+        grid-area: main_content;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: black;
+        color: white;
+        padding: 10px;
+
+      }
+
+      .articles {
+        grid-area: articles;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px 0 0 0;
+      }
+
+      .b {
+        border: 2px solid black;
+        height: 200px;
+        width: 300px;
+
+      }
+
+      .b h2 {
+        background-color: black;
+        color: white;
+        height: 40px;
+        width: 100%;
+      }
+
+      .b p {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <div class="grid_container">
+    <div class="header">
+      <h1>WEB</h1>
+      <div class="a">
+        <a href="#">Contact</a>
+        <a href="#">About us</a>
+      </div>
+    </div>
+    <div class="main_content">
+      <h2>Heading contain</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui consequuntur doloremque suscipit laborum,
+        eum ipsum aspernatur deleniti repellat beatae dolorem voluptatibus nesciunt quo debitis!</p>
+      <br>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, possimus nulla temporibus cupiditate, sit ipsum
+        iure facilis unde sequi deserunt ullam quae consequuntur. Neque, hic!</p>
+
+    </div>
+    <div class="articles">
+      <div class="article b">
+        <h2>Card One</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptates consectetur cupiditate quibusdam,
+          illum laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro vero ullam, nemo
+          quibusdam laboriosam possimus. Doloremque officiis harum velit!</p>
+      </div>
+      <div class="article b">
+        <h2>Card Two</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptates consectetur cupiditate quibusdam,
+          illum laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro vero ullam, nemo
+          quibusdam laboriosam possimus. Doloremque officiis harum velit!</p>
+      </div>
+      <div class="article b">
+        <h2>Card Three</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptates consectetur cupiditate quibusdam,
+          illum laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro vero ullam, nemo
+          quibusdam laboriosam possimus. Doloremque officiis harum velit!</p>
+      </div>
+      <div class="article b">
+        <h2>Card Four</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptates consectetur cupiditate quibusdam,
+          illum laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro vero ullam, nemo
+          quibusdam laboriosam possimus. Doloremque officiis harum velit!</p>
+      </div>
+      <div class="article b">
+        <h2>Card Five</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptates consectetur cupiditate quibusdam,
+          illum laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro vero ullam, nemo
+          quibusdam laboriosam possimus. Doloremque officiis harum velit!</p>
+      </div>
+
+    </div>
+    <div class="sidebar">
+      <h2>Side bar</h2>
+      <br>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eaque facere expedita dignissimos possimus
+        blanditiis corrupti sint? Amet sequi, et repellendus, cumque nobis laudantium distinctio aliquid expedita
+        delectus aliquam harum.</p>
+    </div>
+  </div>
+  </div>
+  </body>
+
+</html>

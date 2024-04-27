@@ -1,0 +1,153 @@
+
+*{
+  padding: 0;
+  margin: 0;
+
+}
+body{
+  padding: 20px;
+}
+header{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.nav-main{
+  display: flex;
+}
+
+.logo img{
+  width: 115px;
+  margin-right: 20px;
+}
+a{
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+img{
+  width: 100%;
+}
+.nav-icon i{
+  padding: 10px;
+}
+.dis{
+  background-image: url(/assets/img/showcase.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 90px;
+  text-align: center;
+  line-height: 2.2rem;
+}
+.dis-info button{
+outline: none;
+border: none;
+background-color:black;
+color: white;
+padding: 10px 5px;
+margin-top: 10px;
+}
+.latest-pro{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+  gap: 10px;
+}
+.late-pro button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color:#0067B8;
+  
+}
+.late-pro p{
+  padding: 10px 0;
+}
+.Xbox-section{
+  background-image:url(/assets/img/xbox.png);
+  height: 350px;
+  width: 97%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 100px 15px 0;
+  padding: 90px 25px;
+
+}
+.Xbox-section .xbox-info{
+  width: 30%;
+}
+.xbox-info p{
+  padding-top: 20px;
+  line-height: 1rem;
+}
+.xbox-info button{
+  outline: none;
+  border: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+  padding: 10px;
+
+}
+.shop-now{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+  gap: 10px;
+}
+.shop-now button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color:#0067B8;
+  
+}
+
+.carbon{
+  background-image: url(/assets/img/carbon.jpg);
+  height: 350px;
+  width: 97%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 100px 15px 0;
+  padding: 90px 25px;
+  color: white;
+}
+.carbon button{
+  background-color: white;
+  color: black;
+}
+.contact{
+  display: flex;
+  align-items: center;
+}
+.contact img{
+ height: 50px;
+ width: 50px;
+ padding: 10px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #F2F2F2;
+ height: 300px;
+ padding: 40px 0px;
+}
+footer ul{
+  list-style: none;
+} 
+footer ul li{
+  padding: 7px;
+}
+
+
